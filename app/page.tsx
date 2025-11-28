@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <div className="container mx-auto  px-4 max-w-7xl">
-        <header className="mb-8 border-b py-8 border-border/40 pb-6 sticky top-0 z-10 bg-background">
+        <header className="mb-6 border-b py-8 border-border/40 pb-6 sticky top-0 z-10 bg-background">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="p-2.5 rounded-xl bg-primary/10 border border-primary/20">
