@@ -2,17 +2,9 @@
 
 import * as React from "react";
 import { Order } from "@/lib/mock-data";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
 import { OrderBookRowDetails } from "./row-details";
-import { ArrowUpDown } from "lucide-react";
 
 interface OrderBookProps {
   orders: Order[];

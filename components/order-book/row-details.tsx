@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Order, OrderStatus } from "@/lib/mock-data";
+import { Order } from "@/lib/mock-data";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -16,7 +16,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Edit2, X, Check, Copy, CheckCircle2, CheckIcon } from "lucide-react";
+import { Edit2, X, Check, Copy, CheckIcon, Timer, Wallet2 } from "lucide-react";
 
 // Define styling map locally or import if shared
 const getStatusVariantColor = (status: string) => {
@@ -77,7 +77,7 @@ export function OrderBookRowDetails({
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <h3 className="text-base font-semibold tracking-tight text-foreground">
-            Order Configuration
+            Order Detail
           </h3>
           <p className="text-sm text-muted-foreground">
             Manage order parameters and view history.
@@ -173,7 +173,7 @@ export function OrderBookRowDetails({
         {/* History Column */}
         <div>
           <h4 className="font-medium text-sm mb-4 flex items-center gap-2">
-            <div className="h-1.5 w-1.5 rounded-full bg-primary" />
+            <Timer className="w-4 h-4" />
             Transaction History
           </h4>
           <div className="space-y-3 pl-2 border-dashed border-l-2 border-border/50">
@@ -209,7 +209,7 @@ export function OrderBookRowDetails({
         {/* Details Column */}
         <div className="space-y-4">
           <h4 className="font-medium text-sm mb-4 flex items-center gap-2">
-            <div className="h-1.5 w-1.5 rounded-full bg-primary" />
+            <Wallet2 className="w-4 h-4" />
             Wallet & Metadata
           </h4>
 

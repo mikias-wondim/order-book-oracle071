@@ -18,8 +18,6 @@ import {
 } from "lucide-react";
 import { Order, OrderStatus, formatWalletAddress } from "@/lib/mock-data";
 
-// --- Helper Functions ---
-
 export const getStatusVariant = (status: OrderStatus) => {
   switch (status) {
     case "Open":
